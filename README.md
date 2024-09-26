@@ -35,14 +35,14 @@ username: admin. password: password.
 ### Задание №2. Составление HTTP-запросов
 ## Составьте GET-запрос к серверу по адресу http://sandbox.com, указав в заголовке User-Agent ваше имя и фамилию.
 
-# curl -H "User-Agent: Ivan Razdorojnii" http://sandbox.com
+#### curl -H "User-Agent: Ivan Razdorojnii" http://sandbox.com
 
 ## Составьте POST-запрос к серверу по адресу http://sandbox.com/cars, указав в теле запроса следующие параметры:
-make: Toyota
-model: Corolla
-year: 2020
+### make: Toyota
+### model: Corolla
+### year: 2020
 
-# curl -X POST http://sandbox.com/cars \ -H "Content-Type: application/json" \ -d '{"make": "Toyota", "model": "Corolla", "year": 2020}'
+#### curl -X POST http://sandbox.com/cars \ -H "Content-Type: application/json" \ -d '{"make": "Toyota", "model": "Corolla", "year": 2020}'
 
 # Напишите один из возможных вариантов ответа сервера следующий запрос. http POST /cars HTTP/1.1 Host: sandbox.com Content-Type: application/json User-Agent: John Doe model=Corolla&make=Toyota&year=2020 Предположите ситуации, когда сервер может вернуть HTTP-коды состояния 200, 201, 400, 401, 403, 404, 500.
 ### 200 OK: Запрос успешно выполнен и данные обновлены или возвращены.
